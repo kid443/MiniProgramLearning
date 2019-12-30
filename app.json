@@ -3,7 +3,6 @@
     "pages/text/text",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/button",
     "pages/button/button"
   ],
   "window": {
