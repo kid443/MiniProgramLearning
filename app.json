@@ -3,13 +3,33 @@
     "pages/text/text",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/button/button"
+    "pages/button/button",
+    "pages/home/home"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "#000000",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "assets/tabbar/car.png",
+        "selectedIconPath": "assets/tabbar/link.png"
+      },
+      {
+        "pagePath": "pages/text/text",
+        "text": "text",
+        "iconPath": "assets/tabbar/car.png",
+        "selectedIconPath": "assets/tabbar/link.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
