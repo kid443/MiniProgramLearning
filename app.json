@@ -11,11 +11,13 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "我的小程序",
     "backgroundColor": "#000000",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
   },
   "tabBar": {
+    
     "selectedColor": "#ff5777",
+
     "list": [
       {
         "pagePath": "pages/home/home",
