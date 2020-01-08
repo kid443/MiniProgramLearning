@@ -1,0 +1,37 @@
+<!--pages/image/image.wxml-->
+
+<!-- 1.可以单标签，可以双标签 -->
+<image></image>
+<image/>
+<!-- 2.有默认大小 320x240 -->
+<text>pages/image/image.wxml</text>
+<!-- 3.image是一个行内块级元素，inline-block -->
+
+<!-- src:1.本地，2.远程 -->
+<!-- 相对路径 -->
+<image src="../../assets/tabbar/car.png"/>
+<!-- 绝对路径 -->
+<image src="/assets/tabbar/car.png"></image>
+<!-- 远程地址 -->
+<image src="http://dmimg.5054399.com/allimg/pkm/pk/22.jpg"></image>
+<image src="https://cn.bing.com/th?id=OHR.HeavensGate_ZH-CN0588204832_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp"></image>
+<!-- 补充 -->
+<button bindtap="handleChooseAlbum">选择图片</button>
+<view >
+  <image src="{{imagePath}}" ></image>
+</view>
+<!-- 图片加载监听 -->
+<image src="https://cn.bing.com/th?id=OHR.HeavensGate_ZH-CN0588204832_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" bindload="handleImageLoad"></image>
+
+<view>------------------------------------------------------------</view>
+<!-- 懒加载：上下三屏开始加载 -->
+<image wx:for="{{10}}"
+      src="https://cn.bing.com/th?id=OHR.HeavensGate_ZH-CN0588204832_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" 
+      bindload="handleImageLoad"
+      lazy-load="{{true}}">
+</image>
+
+<!-- show-menu-by-longpress:长按图片实现小程序码 -->
+<image show-menu-by-longpress="{{true}}" src="{{imagePath}}"></image>
+<!-- mode -->
+<image src="{{imagePath}}" aspectFit="{{true}}" ></image>

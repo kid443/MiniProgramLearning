@@ -1,10 +1,12 @@
 {
   "pages": [
+    "pages/image/image",
     "pages/text/text",
     "pages/index/index",
     "pages/logs/logs",
     "pages/button/button",
     "pages/home/home"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",
@@ -15,9 +17,7 @@
     "backgroundTextStyle": "dark"
   },
   "tabBar": {
-    
     "selectedColor": "#ff5777",
-
     "list": [
       {
         "pagePath": "pages/home/home",

@@ -1,5 +1,11 @@
 //app.js
+// 注册app时，一般做什么？
+// 判断小程序的进入场景；1.扫码；2最上方小程序栏；3.好友分享；
+// 
 App({
+  onShow: function(){
+
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -7,7 +13,7 @@ App({
     wx.setStorageSync('logs', logs)
     wx.getUserInfo({
       success: function(res){
-        console.log(res)
+        console.log
       }
     })
     // 登录
@@ -40,4 +46,5 @@ App({
   globalData: {
     userInfo: null
   }
+  
 })
