@@ -5,8 +5,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/button/button",
-    "pages/home/home"
-    
+    "pages/home/home",
+    "pages/input/input"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",

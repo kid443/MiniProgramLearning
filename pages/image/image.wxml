@@ -23,7 +23,7 @@
 <!-- 图片加载监听 -->
 <image src="https://cn.bing.com/th?id=OHR.HeavensGate_ZH-CN0588204832_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" bindload="handleImageLoad"></image>
 
-<view>------------------------------------------------------------</view>
+<view>---------------------------------------------------</view>
 <!-- 懒加载：上下三屏开始加载 -->
 <image wx:for="{{10}}"
       src="https://cn.bing.com/th?id=OHR.HeavensGate_ZH-CN0588204832_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" 
